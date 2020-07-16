@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1A498724C065EE00CA821C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498624C065EE00CA821C /* AppDelegate.swift */; };
+		AA1A498924C065EE00CA821C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498824C065EE00CA821C /* SceneDelegate.swift */; };
+		AA1A498B24C065EE00CA821C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498A24C065EE00CA821C /* ViewController.swift */; };
+		AA1A498E24C065EE00CA821C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1A498C24C065EE00CA821C /* Main.storyboard */; };
+		AA1A499024C065F000CA821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1A498F24C065F000CA821C /* Assets.xcassets */; };
+		AA1A499324C065F000CA821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1A499124C065F000CA821C /* LaunchScreen.storyboard */; };
+		AA1A499E24C065F000CA821C /* FilimoVitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A499D24C065F000CA821C /* FilimoVitTests.swift */; };
+		AA1A49A924C065F000CA821C /* FilimoVitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49A824C065F000CA821C /* FilimoVitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA1A499A24C065F000CA821C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA1A497B24C065EE00CA821C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA1A498224C065EE00CA821C;
+			remoteInfo = FilimoVit;
+		};
+		AA1A49A524C065F000CA821C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA1A497B24C065EE00CA821C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA1A498224C065EE00CA821C;
+			remoteInfo = FilimoVit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA1A498324C065EE00CA821C /* FilimoVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilimoVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1A498624C065EE00CA821C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA1A498824C065EE00CA821C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA1A498A24C065EE00CA821C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA1A498D24C065EE00CA821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA1A498F24C065F000CA821C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA1A499224C065F000CA821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA1A499424C065F000CA821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1A499924C065F000CA821C /* FilimoVitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilimoVitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1A499D24C065F000CA821C /* FilimoVitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilimoVitTests.swift; sourceTree = "<group>"; };
+		AA1A499F24C065F000CA821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1A49A424C065F000CA821C /* FilimoVitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilimoVitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1A49A824C065F000CA821C /* FilimoVitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilimoVitUITests.swift; sourceTree = "<group>"; };
+		AA1A49AA24C065F000CA821C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA1A498024C065EE00CA821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A499624C065F000CA821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A49A124C065F000CA821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA1A497A24C065EE00CA821C = {
+			isa = PBXGroup;
+			children = (
+				AA1A498524C065EE00CA821C /* FilimoVit */,
+				AA1A499C24C065F000CA821C /* FilimoVitTests */,
+				AA1A49A724C065F000CA821C /* FilimoVitUITests */,
+				AA1A498424C065EE00CA821C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA1A498424C065EE00CA821C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A498324C065EE00CA821C /* FilimoVit.app */,
+				AA1A499924C065F000CA821C /* FilimoVitTests.xctest */,
+				AA1A49A424C065F000CA821C /* FilimoVitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA1A498524C065EE00CA821C /* FilimoVit */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A498624C065EE00CA821C /* AppDelegate.swift */,
+				AA1A498824C065EE00CA821C /* SceneDelegate.swift */,
+				AA1A498A24C065EE00CA821C /* ViewController.swift */,
+				AA1A498C24C065EE00CA821C /* Main.storyboard */,
+				AA1A498F24C065F000CA821C /* Assets.xcassets */,
+				AA1A499124C065F000CA821C /* LaunchScreen.storyboard */,
+				AA1A499424C065F000CA821C /* Info.plist */,
+			);
+			path = FilimoVit;
+			sourceTree = "<group>";
+		};
+		AA1A499C24C065F000CA821C /* FilimoVitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A499D24C065F000CA821C /* FilimoVitTests.swift */,
+				AA1A499F24C065F000CA821C /* Info.plist */,
+			);
+			path = FilimoVitTests;
+			sourceTree = "<group>";
+		};
+		AA1A49A724C065F000CA821C /* FilimoVitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A49A824C065F000CA821C /* FilimoVitUITests.swift */,
+				AA1A49AA24C065F000CA821C /* Info.plist */,
+			);
+			path = FilimoVitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA1A498224C065EE00CA821C /* FilimoVit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1A49AD24C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVit" */;
+			buildPhases = (
+				AA1A497F24C065EE00CA821C /* Sources */,
+				AA1A498024C065EE00CA821C /* Frameworks */,
+				AA1A498124C065EE00CA821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilimoVit;
+			productName = FilimoVit;
+			productReference = AA1A498324C065EE00CA821C /* FilimoVit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA1A499824C065F000CA821C /* FilimoVitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1A49B024C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVitTests" */;
+			buildPhases = (
+				AA1A499524C065F000CA821C /* Sources */,
+				AA1A499624C065F000CA821C /* Frameworks */,
+				AA1A499724C065F000CA821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA1A499B24C065F000CA821C /* PBXTargetDependency */,
+			);
+			name = FilimoVitTests;
+			productName = FilimoVitTests;
+			productReference = AA1A499924C065F000CA821C /* FilimoVitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA1A49A324C065F000CA821C /* FilimoVitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1A49B324C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVitUITests" */;
+			buildPhases = (
+				AA1A49A024C065F000CA821C /* Sources */,
+				AA1A49A124C065F000CA821C /* Frameworks */,
+				AA1A49A224C065F000CA821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA1A49A624C065F000CA821C /* PBXTargetDependency */,
+			);
+			name = FilimoVitUITests;
+			productName = FilimoVitUITests;
+			productReference = AA1A49A424C065F000CA821C /* FilimoVitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA1A497B24C065EE00CA821C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Ehsan Askari";
+				TargetAttributes = {
+					AA1A498224C065EE00CA821C = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AA1A499824C065F000CA821C = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AA1A498224C065EE00CA821C;
+					};
+					AA1A49A324C065F000CA821C = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AA1A498224C065EE00CA821C;
+					};
+				};
+			};
+			buildConfigurationList = AA1A497E24C065EE00CA821C /* Build configuration list for PBXProject "FilimoVit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA1A497A24C065EE00CA821C;
+			productRefGroup = AA1A498424C065EE00CA821C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA1A498224C065EE00CA821C /* FilimoVit */,
+				AA1A499824C065F000CA821C /* FilimoVitTests */,
+				AA1A49A324C065F000CA821C /* FilimoVitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA1A498124C065EE00CA821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1A499324C065F000CA821C /* LaunchScreen.storyboard in Resources */,
+				AA1A499024C065F000CA821C /* Assets.xcassets in Resources */,
+				AA1A498E24C065EE00CA821C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A499724C065F000CA821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A49A224C065F000CA821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA1A497F24C065EE00CA821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1A498B24C065EE00CA821C /* ViewController.swift in Sources */,
+				AA1A498724C065EE00CA821C /* AppDelegate.swift in Sources */,
+				AA1A498924C065EE00CA821C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A499524C065F000CA821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1A499E24C065F000CA821C /* FilimoVitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1A49A024C065F000CA821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1A49A924C065F000CA821C /* FilimoVitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA1A499B24C065F000CA821C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA1A498224C065EE00CA821C /* FilimoVit */;
+			targetProxy = AA1A499A24C065F000CA821C /* PBXContainerItemProxy */;
+		};
+		AA1A49A624C065F000CA821C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA1A498224C065EE00CA821C /* FilimoVit */;
+			targetProxy = AA1A49A524C065F000CA821C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA1A498C24C065EE00CA821C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA1A498D24C065EE00CA821C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA1A499124C065F000CA821C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA1A499224C065F000CA821C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA1A49AB24C065F000CA821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA1A49AC24C065F000CA821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA1A49AE24C065F000CA821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA1A49AF24C065F000CA821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA1A49B124C065F000CA821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilimoVit.app/FilimoVit";
+			};
+			name = Debug;
+		};
+		AA1A49B224C065F000CA821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilimoVit.app/FilimoVit";
+			};
+			name = Release;
+		};
+		AA1A49B424C065F000CA821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilimoVit;
+			};
+			name = Debug;
+		};
+		AA1A49B524C065F000CA821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLZ6FYL398;
+				INFOPLIST_FILE = FilimoVitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ir.ehsanaskari.FilimoVitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilimoVit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA1A497E24C065EE00CA821C /* Build configuration list for PBXProject "FilimoVit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1A49AB24C065F000CA821C /* Debug */,
+				AA1A49AC24C065F000CA821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1A49AD24C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1A49AE24C065F000CA821C /* Debug */,
+				AA1A49AF24C065F000CA821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1A49B024C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1A49B124C065F000CA821C /* Debug */,
+				AA1A49B224C065F000CA821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1A49B324C065F000CA821C /* Build configuration list for PBXNativeTarget "FilimoVitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1A49B424C065F000CA821C /* Debug */,
+				AA1A49B524C065F000CA821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA1A497B24C065EE00CA821C /* Project object */;
+}
