@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AA1A498724C065EE00CA821C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498624C065EE00CA821C /* AppDelegate.swift */; };
 		AA1A498924C065EE00CA821C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498824C065EE00CA821C /* SceneDelegate.swift */; };
-		AA1A498B24C065EE00CA821C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498A24C065EE00CA821C /* ViewController.swift */; };
+		AA1A498B24C065EE00CA821C /* VitrinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A498A24C065EE00CA821C /* VitrinVC.swift */; };
 		AA1A498E24C065EE00CA821C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1A498C24C065EE00CA821C /* Main.storyboard */; };
 		AA1A499024C065F000CA821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1A498F24C065F000CA821C /* Assets.xcassets */; };
 		AA1A499324C065F000CA821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1A499124C065F000CA821C /* LaunchScreen.storyboard */; };
@@ -23,6 +23,7 @@
 		AA1A49C824C21DAB00CA821C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49C724C21DAB00CA821C /* Tag.swift */; };
 		AA1A49CC24C2444500CA821C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49CB24C2444500CA821C /* Network.swift */; };
 		AA1A49CE24C2C3D500CA821C /* HeaderSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49CD24C2C3D500CA821C /* HeaderSlider.swift */; };
+		AA1A49D624C32DAB00CA821C /* VitrinVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49D524C32DAB00CA821C /* VitrinVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		AA1A498324C065EE00CA821C /* FilimoVit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilimoVit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1A498624C065EE00CA821C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA1A498824C065EE00CA821C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA1A498A24C065EE00CA821C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA1A498A24C065EE00CA821C /* VitrinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinVC.swift; sourceTree = "<group>"; };
 		AA1A498D24C065EE00CA821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA1A498F24C065F000CA821C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA1A499224C065F000CA821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		AA1A49C724C21DAB00CA821C /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		AA1A49CB24C2444500CA821C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		AA1A49CD24C2C3D500CA821C /* HeaderSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSlider.swift; sourceTree = "<group>"; };
+		AA1A49D524C32DAB00CA821C /* VitrinVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +117,15 @@
 		AA1A498524C065EE00CA821C /* FilimoVit */ = {
 			isa = PBXGroup;
 			children = (
-				AA1A49CB24C2444500CA821C /* Network.swift */,
 				AA1A49BC24C1C1F200CA821C /* Models */,
+				AA1A49D024C32B8500CA821C /* ViewModels */,
+				AA1A49CF24C32B6400CA821C /* Views */,
+				AA1A49D124C32BA500CA821C /* Helpers */,
 				AA1A498624C065EE00CA821C /* AppDelegate.swift */,
 				AA1A498824C065EE00CA821C /* SceneDelegate.swift */,
-				AA1A498A24C065EE00CA821C /* ViewController.swift */,
-				AA1A49BF24C1C53B00CA821C /* Constants.swift */,
 				AA1A498C24C065EE00CA821C /* Main.storyboard */,
-				AA1A498F24C065F000CA821C /* Assets.xcassets */,
 				AA1A499124C065F000CA821C /* LaunchScreen.storyboard */,
+				AA1A498F24C065F000CA821C /* Assets.xcassets */,
 				AA1A499424C065F000CA821C /* Info.plist */,
 			);
 			path = FilimoVit;
@@ -150,6 +152,47 @@
 		AA1A49BC24C1C1F200CA821C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA1A49D324C32C5800CA821C /* Vitrin */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA1A49CF24C32B6400CA821C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A49D224C32C0100CA821C /* Vitrin */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA1A49D024C32B8500CA821C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A49D424C32C8F00CA821C /* Vitrin */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA1A49D124C32BA500CA821C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A49CB24C2444500CA821C /* Network.swift */,
+				AA1A49BF24C1C53B00CA821C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AA1A49D224C32C0100CA821C /* Vitrin */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A498A24C065EE00CA821C /* VitrinVC.swift */,
+			);
+			path = Vitrin;
+			sourceTree = "<group>";
+		};
+		AA1A49D324C32C5800CA821C /* Vitrin */ = {
+			isa = PBXGroup;
+			children = (
 				AA1A49BD24C1C48B00CA821C /* VitrinItem.swift */,
 				AA1A49C124C2102200CA821C /* Base.swift */,
 				AA1A49CD24C2C3D500CA821C /* HeaderSlider.swift */,
@@ -157,7 +200,15 @@
 				AA1A49C524C21D9400CA821C /* Movie.swift */,
 				AA1A49C724C21DAB00CA821C /* Tag.swift */,
 			);
-			path = Models;
+			path = Vitrin;
+			sourceTree = "<group>";
+		};
+		AA1A49D424C32C8F00CA821C /* Vitrin */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A49D524C32DAB00CA821C /* VitrinVM.swift */,
+			);
+			path = Vitrin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1A49C024C1C53B00CA821C /* Constants.swift in Sources */,
-				AA1A498B24C065EE00CA821C /* ViewController.swift in Sources */,
+				AA1A498B24C065EE00CA821C /* VitrinVC.swift in Sources */,
 				AA1A498724C065EE00CA821C /* AppDelegate.swift in Sources */,
 				AA1A49CE24C2C3D500CA821C /* HeaderSlider.swift in Sources */,
+				AA1A49D624C32DAB00CA821C /* VitrinVM.swift in Sources */,
 				AA1A49BE24C1C48B00CA821C /* VitrinItem.swift in Sources */,
 				AA1A49CC24C2444500CA821C /* Network.swift in Sources */,
 				AA1A49C424C2148E00CA821C /* Poster.swift in Sources */,
