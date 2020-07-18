@@ -17,14 +17,13 @@ enum API {
     #endif
 }
 
-enum Color {
-    static let primaryColor = UIColor(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)
-    static let secondaryColor = UIColor.lightGray
 
-    // A visual way to define colours within code files is to use #colorLiteral
-    // This syntax will present you with colour picker component right on the code line
-    static let tertiaryColor = #colorLiteral(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)
+enum Color {
+    static let primary = #colorLiteral(red: 0.1516066194, green: 0.1516112089, blue: 0.1516087353, alpha: 1)
+    static let secondary = #colorLiteral(red: 1, green: 0.7553820014, blue: 0, alpha: 1)
+    static let gray = #colorLiteral(red: 0.8505141139, green: 0.8506365418, blue: 0.853792727, alpha: 1)
 }
+
 
 enum VitrinItemType: String, Codable {
     case HeaderSlider = "headerslider"
