@@ -62,6 +62,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Product_Sans_Regular.ttf</string>
 		<string>IRANSansMobile(FaNum)_Bold.ttf</string>
 		<string>IRANSansMobile(FaNum)_Light.ttf</string>
 		<string>IRANSansMobile(FaNum)_Medium.ttf</string>

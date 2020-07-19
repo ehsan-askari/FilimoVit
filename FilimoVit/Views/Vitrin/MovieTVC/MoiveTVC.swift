@@ -11,7 +11,7 @@ import FSPagerView
 
 class MoiveTVC: UITableViewCell {
     
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {

@@ -43,6 +43,7 @@
 		AA1A49F824C4C44500CA821C /* ThumbnailCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49F724C4C44500CA821C /* ThumbnailCVC.swift */; };
 		AA1A49FB24C4C49600CA821C /* TheaterCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */; };
 		AA1A49FD24C4C4A000CA821C /* TheaterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */; };
+		AA1A49FF24C4CBD500CA821C /* Product_Sans_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		AA1A49F724C4C44500CA821C /* ThumbnailCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCVC.swift; sourceTree = "<group>"; };
 		AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterCVC.xib; sourceTree = "<group>"; };
 		AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCVC.swift; sourceTree = "<group>"; };
+		AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Product_Sans_Regular.ttf; sourceTree = "<group>"; };
 		EF6DCC97617DC49DCFE6DD52 /* Pods_FilimoVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilimoVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -298,6 +300,7 @@
 		AA1A49E424C49F2300CA821C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */,
 				AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */,
 				AA1A49E724C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf */,
 				AA1A49E924C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf */,
@@ -464,6 +467,7 @@
 				AA1A49F624C4C3D700CA821C /* ThumbnailCVC.xib in Resources */,
 				AA1A49ED24C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
 				AA1A49F124C4C37500CA821C /* ThumbplayCVC.xib in Resources */,
+				AA1A49FF24C4CBD500CA821C /* Product_Sans_Regular.ttf in Resources */,
 				AA1A49EE24C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
 				AA1A49EA24C49F8700CA821C /* IRANSansMobile(FaNum).ttf in Resources */,
 				AA1A49FB24C4C49600CA821C /* TheaterCVC.xib in Resources */,

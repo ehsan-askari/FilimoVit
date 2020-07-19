@@ -37,9 +37,9 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSm-60-hPB">
-                                        <rect key="frame" x="81" y="8" width="730" height="19"/>
-                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="81" y="8.5" width="730" height="18"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                                        <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاهده همه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yop-u6-jIl">
@@ -65,7 +65,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-hO-AAh">
-                                <rect key="frame" x="8" y="43" width="807" height="365"/>
+                                <rect key="frame" x="4" y="43" width="811" height="365"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bom-L8-6xU">
                                     <size key="itemSize" width="128" height="128"/>
@@ -81,7 +81,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="szG-PN-IrW" secondAttribute="trailing" constant="8" id="6cr-A0-TAj"/>
-                            <constraint firstItem="mTr-hO-AAh" firstAttribute="leading" secondItem="SzE-Vk-mDd" secondAttribute="leading" constant="8" id="fpG-Eh-i6j"/>
+                            <constraint firstItem="mTr-hO-AAh" firstAttribute="leading" secondItem="SzE-Vk-mDd" secondAttribute="leading" constant="4" id="fpG-Eh-i6j"/>
                             <constraint firstItem="szG-PN-IrW" firstAttribute="leading" secondItem="SzE-Vk-mDd" secondAttribute="leading" constant="4" id="get-6O-hq3"/>
                             <constraint firstAttribute="trailing" secondItem="mTr-hO-AAh" secondAttribute="trailing" constant="8" id="tvb-iZ-1c0"/>
                         </constraints>
@@ -97,7 +97,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="collectionView" destination="mTr-hO-AAh" id="KH1-fA-Z1g"/>
-                <outlet property="title" destination="rSm-60-hPB" id="XT7-4R-sM3"/>
+                <outlet property="titleLabel" destination="rSm-60-hPB" id="Vws-K5-rUh"/>
                 <outlet property="titleView" destination="szG-PN-IrW" id="RbZ-vZ-WYx"/>
             </connections>
             <point key="canvasLocation" x="-11" y="-26"/>

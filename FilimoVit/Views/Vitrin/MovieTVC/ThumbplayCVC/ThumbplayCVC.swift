@@ -6,4 +6,15 @@
 //  Copyright © 2020 Ehsan Askari. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ThumbplayCVC: UICollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var movieItem: Movie.MovieItem! {
+        didSet {
+            self.imageView.setImage(withURL: movieItem.imageURL)
+        }
+    }
+}
