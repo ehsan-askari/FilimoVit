@@ -1,0 +1,6 @@
+framework module Pods_FilimoVit {
+  umbrella header "Pods-FilimoVit-umbrella.h"
+
+  export *
+  module * { export * }
+}
