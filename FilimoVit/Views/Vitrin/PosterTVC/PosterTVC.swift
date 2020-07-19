@@ -9,7 +9,6 @@
 import UIKit
 import FSPagerView
 
-
 class PosterTVC: UITableViewCell {
     
     @IBOutlet weak var pagerView: FSPagerView! {

@@ -60,5 +60,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IRANSansMobile(FaNum)_Bold.ttf</string>
+		<string>IRANSansMobile(FaNum)_Light.ttf</string>
+		<string>IRANSansMobile(FaNum)_Medium.ttf</string>
+		<string>IRANSansMobile(FaNum)_UltraLight.ttf</string>
+		<string>IRANSansMobile(FaNum).ttf</string>
+	</array>
 </dict>
 </plist>

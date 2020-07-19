@@ -31,7 +31,6 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="Bkc-AA-r9G" firstAttribute="bottom" secondItem="dRm-t2-261" secondAttribute="bottom" id="40R-Eh-3Kv"/>
                     <constraint firstItem="dRm-t2-261" firstAttribute="top" secondItem="fRn-qd-ozg" secondAttribute="top" id="5o7-EH-tsp"/>

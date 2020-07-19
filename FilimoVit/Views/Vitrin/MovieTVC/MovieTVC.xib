@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile(FaNum).ttf">
+            <string>IRANSansMobileFaNum</string>
+        </array>
+        <array key="IRANSansMobile(FaNum)_Medium.ttf">
+            <string>IRANSansMobileFaNum-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoiveTVC" rowHeight="440" id="eKr-86-jqo" customClass="MoiveTVC" customModule="FilimoVit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="823" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eKr-86-jqo" id="Q7h-pp-9kp">
+                <rect key="frame" x="0.0" y="0.0" width="823" height="440"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SzE-Vk-mDd">
+                        <rect key="frame" x="0.0" y="16" width="823" height="408"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szG-PN-IrW">
+                                <rect key="frame" x="4" y="0.0" width="811" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-ms-8oS">
+                                        <rect key="frame" x="0.0" y="11.5" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="jdp-zc-b1S"/>
+                                            <constraint firstAttribute="height" constant="12" id="tej-qh-01L"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSm-60-hPB">
+                                        <rect key="frame" x="81" y="8" width="730" height="19"/>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاهده همه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yop-u6-jIl">
+                                        <rect key="frame" x="12" y="10" width="65" height="15.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="HUJ-WB-6ZA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rSm-60-hPB" firstAttribute="leading" secondItem="yop-u6-jIl" secondAttribute="trailing" constant="4" id="A2i-Se-hfu"/>
+                                    <constraint firstItem="rSm-60-hPB" firstAttribute="centerY" secondItem="szG-PN-IrW" secondAttribute="centerY" id="AjX-wS-h2e"/>
+                                    <constraint firstItem="yop-u6-jIl" firstAttribute="centerY" secondItem="szG-PN-IrW" secondAttribute="centerY" id="EFK-l6-FXc"/>
+                                    <constraint firstItem="DOf-ms-8oS" firstAttribute="centerY" secondItem="szG-PN-IrW" secondAttribute="centerY" id="O4m-Y4-fzi"/>
+                                    <constraint firstItem="yop-u6-jIl" firstAttribute="leading" secondItem="DOf-ms-8oS" secondAttribute="trailing" id="TSz-u0-KT3"/>
+                                    <constraint firstItem="DOf-ms-8oS" firstAttribute="leading" secondItem="szG-PN-IrW" secondAttribute="leading" id="bXv-Uu-Eo4"/>
+                                    <constraint firstAttribute="trailing" secondItem="rSm-60-hPB" secondAttribute="trailing" id="cAJ-jk-UhG"/>
+                                    <constraint firstAttribute="height" constant="35" id="dtq-LU-AjI"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-hO-AAh">
+                                <rect key="frame" x="8" y="43" width="807" height="365"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bom-L8-6xU">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="eKr-86-jqo" id="gHw-Wm-M6V"/>
+                                    <outlet property="delegate" destination="eKr-86-jqo" id="mf7-rc-VEp"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="szG-PN-IrW" secondAttribute="trailing" constant="8" id="6cr-A0-TAj"/>
+                            <constraint firstItem="mTr-hO-AAh" firstAttribute="leading" secondItem="SzE-Vk-mDd" secondAttribute="leading" constant="8" id="fpG-Eh-i6j"/>
+                            <constraint firstItem="szG-PN-IrW" firstAttribute="leading" secondItem="SzE-Vk-mDd" secondAttribute="leading" constant="4" id="get-6O-hq3"/>
+                            <constraint firstAttribute="trailing" secondItem="mTr-hO-AAh" secondAttribute="trailing" constant="8" id="tvb-iZ-1c0"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SzE-Vk-mDd" secondAttribute="trailing" id="4jF-h6-pjJ"/>
+                    <constraint firstItem="SzE-Vk-mDd" firstAttribute="top" secondItem="Q7h-pp-9kp" secondAttribute="top" constant="16" id="ESA-nS-1o4"/>
+                    <constraint firstAttribute="bottom" secondItem="SzE-Vk-mDd" secondAttribute="bottom" constant="16" id="bJh-ho-3pn"/>
+                    <constraint firstItem="SzE-Vk-mDd" firstAttribute="leading" secondItem="Q7h-pp-9kp" secondAttribute="leading" id="yzY-xb-0Qn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="mTr-hO-AAh" id="KH1-fA-Z1g"/>
+                <outlet property="title" destination="rSm-60-hPB" id="XT7-4R-sM3"/>
+                <outlet property="titleView" destination="szG-PN-IrW" id="RbZ-vZ-WYx"/>
+            </connections>
+            <point key="canvasLocation" x="-11" y="-26"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="leftArrow" width="64" height="64"/>
+    </resources>
+</document>
