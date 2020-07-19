@@ -25,21 +25,22 @@ class ImageSliderTVC: UITableViewCell {
         }
     }
     
-    var headerSlider: HeaderSlider! {
+    var poster: Poster? {
         didSet {
-            self.pageControl.numberOfPages = self.headerSlider.list.count
-            pagerView.reloadData()
+            self.pagerView.automaticSlidingInterval = CGFloat(self.poster?.list.first?.autoPlayDuration ?? 0)
+            self.pageControl.numberOfPages = self.poster?.list.count ?? 0
+            self.pagerView.reloadData()
         }
     }
     
-    class func calculateHeight() -> CGFloat {
-        UIScreen.main.bounds.width / 1.75
+   class func calculateHeight() -> CGFloat {
+        UIScreen.main.bounds.width * 0.35
     }
 }
 
 extension ImageSliderTVC: FSPagerViewDataSource {
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return headerSlider.list.count
+        return poster?.list.count ?? 0
     }
 }
 
@@ -49,7 +50,9 @@ extension ImageSliderTVC: FSPagerViewDelegate {
         cell.forceRTL()
         cell.isUserInteractionEnabled = false
         cell.imageView?.contentMode = .scaleToFill
-        cell.imageView?.setImage(withURL: headerSlider.list[index].imageURL)
+        if let imageURL = poster?.list[index].imageURL {
+            cell.imageView?.setImage(withURL:imageURL)
+        }
         return cell
     }
     

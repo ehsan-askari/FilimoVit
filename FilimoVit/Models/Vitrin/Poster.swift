@@ -12,13 +12,11 @@ struct Poster: Base {
     
     var id: Int
     var theme: VitrinItemTheme
-    let title: String
     let list: [PosterItem]
     
     enum CodingKeys: String, CodingKey {
         case id
         case theme
-        case title = "link_text"
         case list = "posters"
         case data
     }
@@ -27,7 +25,6 @@ struct Poster: Base {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(Int.self, forKey: .id)
         theme = try container.decode(VitrinItemTheme.self, forKey: .theme)
-        title = try container.decode(String.self, forKey: .title)
         let listContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .list)
         list = try listContainer.decode([PosterItem].self, forKey: .data)
     }
@@ -42,10 +39,12 @@ extension Poster {
         
         let id: Int
         let imageURL: String
+        let autoPlayDuration: Float
         
         enum CodingKeys: String, CodingKey {
             case id
             case imageURL = "pic"
+            case autoPlayDuration = "autoplay_duration"
         }
         
     }
