@@ -10,14 +10,14 @@ import UIKit
 
 class ThumbnailCVC: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var serialImageView: SerialImageView!
     @IBOutlet weak var hdImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleEnLabel: UILabel!
     
     var movieItem: Movie.MovieItem! {
         didSet {
-            self.imageView.setImage(withURL: movieItem.imageURL)
+            self.serialImageView.imageURL = movieItem.imageURL
             self.hdImageView.isHidden = !movieItem.isHD
             self.titleLabel.text = movieItem.title
             self.titleEnLabel.text = movieItem.titleEn

@@ -44,6 +44,8 @@
 		AA1A49FB24C4C49600CA821C /* TheaterCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */; };
 		AA1A49FD24C4C4A000CA821C /* TheaterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */; };
 		AA1A49FF24C4CBD500CA821C /* Product_Sans_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */; };
+		AA1A4A0224C58BEB00CA821C /* SerialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4A0124C58BEB00CA821C /* SerialImageView.swift */; };
+		AA1A4A0424C58BFA00CA821C /* SerialImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4A0324C58BFA00CA821C /* SerialImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterCVC.xib; sourceTree = "<group>"; };
 		AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCVC.swift; sourceTree = "<group>"; };
 		AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Product_Sans_Regular.ttf; sourceTree = "<group>"; };
+		AA1A4A0124C58BEB00CA821C /* SerialImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialImageView.swift; sourceTree = "<group>"; };
+		AA1A4A0324C58BFA00CA821C /* SerialImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerialImageView.xib; sourceTree = "<group>"; };
 		EF6DCC97617DC49DCFE6DD52 /* Pods_FilimoVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilimoVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -322,6 +326,7 @@
 		AA1A49F424C4C3A800CA821C /* ThumbnailCVC */ = {
 			isa = PBXGroup;
 			children = (
+				AA1A4A0024C58B0C00CA821C /* SerialImageView */,
 				AA1A49F524C4C3D700CA821C /* ThumbnailCVC.xib */,
 				AA1A49F724C4C44500CA821C /* ThumbnailCVC.swift */,
 			);
@@ -335,6 +340,15 @@
 				AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */,
 			);
 			path = TheaterCVC;
+			sourceTree = "<group>";
+		};
+		AA1A4A0024C58B0C00CA821C /* SerialImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AA1A4A0324C58BFA00CA821C /* SerialImageView.xib */,
+				AA1A4A0124C58BEB00CA821C /* SerialImageView.swift */,
+			);
+			path = SerialImageView;
 			sourceTree = "<group>";
 		};
 		B694E3C92075AADBFA394FBC /* Pods */ = {
@@ -463,6 +477,7 @@
 				AA1A49EC24C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
 				AA1A499024C065F000CA821C /* Assets.xcassets in Resources */,
 				AA1A49DC24C3654900CA821C /* PosterTVC.xib in Resources */,
+				AA1A4A0424C58BFA00CA821C /* SerialImageView.xib in Resources */,
 				AA1A49E324C49D2800CA821C /* MovieTVC.xib in Resources */,
 				AA1A49F624C4C3D700CA821C /* ThumbnailCVC.xib in Resources */,
 				AA1A49ED24C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
@@ -608,6 +623,7 @@
 				AA1A49DE24C36C1900CA821C /* Extensiones.swift in Sources */,
 				AA1A49FD24C4C4A000CA821C /* TheaterCVC.swift in Sources */,
 				AA1A49DA24C3653600CA821C /* PosterTVC.swift in Sources */,
+				AA1A4A0224C58BEB00CA821C /* SerialImageView.swift in Sources */,
 				AA1A49BE24C1C48B00CA821C /* VitrinItem.swift in Sources */,
 				AA1A49CC24C2444500CA821C /* Network.swift in Sources */,
 				AA1A49C424C2148E00CA821C /* Poster.swift in Sources */,

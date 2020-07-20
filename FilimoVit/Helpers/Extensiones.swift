@@ -14,6 +14,23 @@ extension UIView {
         self.transform = CGAffineTransform(scaleX: -1, y: 1)
     }
     
+    @IBInspectable public var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
+        }
+    }
+    
+    func addBlurEffect(alpha: CGFloat) {
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        visualEffectView.frame = self.bounds
+        visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        visualEffectView.alpha = alpha
+        self.insertSubview(visualEffectView, at: 1)
+    }
+    
 }
 
 extension UIImageView {

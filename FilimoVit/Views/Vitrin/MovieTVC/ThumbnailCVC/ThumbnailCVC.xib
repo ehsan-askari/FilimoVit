@@ -30,9 +30,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laN-1Z-aLr">
                                 <rect key="frame" x="0.0" y="0.0" width="477" height="497.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZzV-q7-7eE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-Uc-Ewd" customClass="SerialImageView" customModule="FilimoVit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="477" height="497.5"/>
-                                    </imageView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd" translatesAutoresizingMaskIntoConstraints="NO" id="mTz-SD-qAG">
                                         <rect key="frame" x="6" y="471.5" width="20" height="20"/>
                                         <constraints>
@@ -43,12 +44,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="mTz-SD-qAG" firstAttribute="leading" secondItem="ZzV-q7-7eE" secondAttribute="leading" constant="6" id="0Et-Hx-MqN"/>
-                                    <constraint firstItem="ZzV-q7-7eE" firstAttribute="top" secondItem="laN-1Z-aLr" secondAttribute="top" id="5gq-b9-E1H"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZzV-q7-7eE" secondAttribute="trailing" id="CqP-0L-ni8"/>
-                                    <constraint firstItem="ZzV-q7-7eE" firstAttribute="leading" secondItem="laN-1Z-aLr" secondAttribute="leading" id="EzE-py-61w"/>
-                                    <constraint firstItem="mTz-SD-qAG" firstAttribute="bottom" secondItem="ZzV-q7-7eE" secondAttribute="bottom" constant="-6" id="LYX-kW-u1Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZzV-q7-7eE" secondAttribute="bottom" id="c96-pp-Rzu"/>
+                                    <constraint firstItem="cd6-Uc-Ewd" firstAttribute="leading" secondItem="laN-1Z-aLr" secondAttribute="leading" id="8HO-6w-qOq"/>
+                                    <constraint firstAttribute="bottom" secondItem="cd6-Uc-Ewd" secondAttribute="bottom" id="CCE-GT-ICy"/>
+                                    <constraint firstItem="cd6-Uc-Ewd" firstAttribute="top" secondItem="laN-1Z-aLr" secondAttribute="top" id="VCL-Xh-SSf"/>
+                                    <constraint firstAttribute="trailing" secondItem="cd6-Uc-Ewd" secondAttribute="trailing" id="XV9-vU-eIN"/>
+                                    <constraint firstItem="mTz-SD-qAG" firstAttribute="leading" secondItem="cd6-Uc-Ewd" secondAttribute="leading" constant="6" id="dur-H7-ylI"/>
+                                    <constraint firstItem="mTz-SD-qAG" firstAttribute="bottom" secondItem="cd6-Uc-Ewd" secondAttribute="bottom" constant="-6" id="ex2-SQ-F5V"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان فارسی" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-5C-sVF">
@@ -85,7 +86,7 @@
             <size key="customSize" width="481" height="542"/>
             <connections>
                 <outlet property="hdImageView" destination="mTz-SD-qAG" id="TCz-Mk-4nR"/>
-                <outlet property="imageView" destination="ZzV-q7-7eE" id="Hzs-1c-i2K"/>
+                <outlet property="serialImageView" destination="cd6-Uc-Ewd" id="rKv-tf-8ay"/>
                 <outlet property="titleEnLabel" destination="CuP-lA-cD8" id="Pbv-D6-FuZ"/>
                 <outlet property="titleLabel" destination="y5N-5C-sVF" id="6Si-ac-0vy"/>
             </connections>
