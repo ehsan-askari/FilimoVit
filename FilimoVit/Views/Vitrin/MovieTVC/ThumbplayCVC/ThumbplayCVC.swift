@@ -17,4 +17,8 @@ class ThumbplayCVC: UICollectionViewCell {
             self.imageView.setImage(withURL: movieItem.imageURL)
         }
     }
+    
+    override func prepareForReuse() {
+        self.imageView.image = UIImage()
+    }
 }

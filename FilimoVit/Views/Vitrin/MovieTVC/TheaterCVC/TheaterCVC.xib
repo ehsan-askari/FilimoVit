@@ -170,6 +170,17 @@
             </collectionViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <size key="customSize" width="518" height="499"/>
+            <connections>
+                <outlet property="avgRatePercentageLabel" destination="To9-Pn-94u" id="qhB-c9-n10"/>
+                <outlet property="categoryTitleLabel" destination="fYg-wn-IUk" id="rai-af-mOn"/>
+                <outlet property="countryLabel" destination="Ghd-RB-cZQ" id="Yam-6g-qeq"/>
+                <outlet property="coverImageView" destination="tEk-ZH-ucn" id="WdH-wL-Gzw"/>
+                <outlet property="hdImageView" destination="B3R-Oa-76i" id="BNZ-rT-yU0"/>
+                <outlet property="imageView" destination="DPE-wS-46Y" id="etm-L8-Au0"/>
+                <outlet property="imdbRateLabel" destination="OUd-7f-DEX" id="Rdm-M0-ba8"/>
+                <outlet property="imdbRateSV" destination="4H7-2M-nHZ" id="VNd-FZ-fsF"/>
+                <outlet property="titleLabel" destination="kkE-J9-jyo" id="OuE-Gt-VxJ"/>
+            </connections>
             <point key="canvasLocation" x="1.4492753623188408" y="19.084821428571427"/>
         </collectionViewCell>
     </objects>

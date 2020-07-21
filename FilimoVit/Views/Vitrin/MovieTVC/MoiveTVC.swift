@@ -20,7 +20,7 @@ class MoiveTVC: UITableViewCell {
         }
     }
     
-    var movie: Movie? {
+    var movie: Movie! {
         didSet {
             self.collectionView.reloadData()
         }

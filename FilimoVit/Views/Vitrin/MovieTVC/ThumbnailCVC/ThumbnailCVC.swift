@@ -23,4 +23,9 @@ class ThumbnailCVC: UICollectionViewCell {
             self.titleEnLabel.text = movieItem.titleEn
         }
     }
+    
+    override func prepareForReuse() {
+        self.serialImageView.prepareForReuse()
+    }
+    
 }

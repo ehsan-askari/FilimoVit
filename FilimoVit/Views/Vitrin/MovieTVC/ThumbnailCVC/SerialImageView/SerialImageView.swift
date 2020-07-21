@@ -24,12 +24,18 @@ class SerialImageView: UIView {
     
     @IBOutlet weak var thirdImageView: UIImageView!
     
-    var imageURL: String = "" {
+    var imageURL: String! {
         didSet {
-            self.firstImageView.setImage(withURL: self.imageURL)
-            self.secondImageView.setImage(withURL: self.imageURL)
-            self.thirdImageView.setImage(withURL: self.imageURL)
+            self.firstImageView.setImage(withURL: imageURL)
+            self.secondImageView.setImage(withURL: imageURL)
+            self.thirdImageView.setImage(withURL: imageURL)
         }
+    }
+    
+    func prepareForReuse() {
+        self.firstImageView.image = UIImage()
+        self.secondImageView.image = UIImage()
+        self.thirdImageView.image = UIImage()
     }
     
 }
