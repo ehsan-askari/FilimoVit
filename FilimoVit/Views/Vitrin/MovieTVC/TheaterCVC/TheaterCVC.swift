@@ -6,4 +6,12 @@
 //  Copyright © 2020 Ehsan Askari. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TheaterCVC: UICollectionViewCell {
+    
+    
+    var movieItem: Movie.MovieItem! {
+        didSet {        }
+    }
+}
