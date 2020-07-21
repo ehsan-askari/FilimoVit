@@ -88,8 +88,8 @@ extension Movie {
             coverImageURL = try? container.decodeIfPresent(String.self, forKey: .coverImageURL)
             avgRatePercentage = try container.decode(String.self, forKey: .avgRatePercentage)
             country = try? container.decodeIfPresent(String.self, forKey: .country)
-            let temp = try container.decode(Float.self, forKey: .imdbRate)
-            imdbRate = temp == Float(0) ? nil : temp
+            let iR = Float(try container.decode(String.self, forKey: .imdbRate))
+            imdbRate = iR == Float(0) ? nil : iR
             categoryTitle = try? container.decodeIfPresent(String.self, forKey: .categoryTitle)
         }
         

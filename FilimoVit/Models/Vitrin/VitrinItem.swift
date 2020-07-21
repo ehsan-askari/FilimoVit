@@ -22,9 +22,9 @@ enum VitrinItem: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let type = try container.decode(VitrinItemType.self, forKey: .type)
-        print(type)
-        switch type {
+        let type = try container.decode(String.self, forKey: .type)
+        
+        switch VitrinItemType.init(rawValue: type) {
         case .HeaderSlider:
             self = .headerSlider(try HeaderSlider(from: decoder))
             break

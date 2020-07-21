@@ -47,6 +47,15 @@ extension Poster {
             case autoPlayDuration = "autoplay_duration"
         }
         
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            id = try container.decode(Int.self, forKey: .id)
+            imageURL = try container.decode(String.self, forKey: .imageURL)
+            autoPlayDuration = Float(try container.decode(String.self, forKey: .autoPlayDuration)) ?? 0
+        }
+        
+        func encode(to encoder: Encoder) throws {}
+        
     }
     
 }
