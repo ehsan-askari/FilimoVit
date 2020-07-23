@@ -40,23 +40,24 @@ extension UIImageView {
             return
         }
         
-        let cache =  URLCache.shared
-        let request = URLRequest(url: imageURL)
+        let urlCacheShared =  URLCache.shared //4 + 20 MB
+        let urlRequest = URLRequest(url: imageURL)
+        
         DispatchQueue.global(qos: .userInitiated).async {
-            if let data = cache.cachedResponse(for: request)?.data, let image = UIImage(data: data) {
+            if let data = urlCacheShared.cachedResponse(for: urlRequest)?.data, let image = UIImage(data: data) {
                 DispatchQueue.main.async {
                     self.image = image
                 }
             } else {
-                URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-                    if let data = data, let response = response, ((response as? HTTPURLResponse)?.statusCode ?? 500) < 300, let image = UIImage(data: data) {
-                        let cachedData = CachedURLResponse(response: response, data: data)
-                        cache.storeCachedResponse(cachedData, for: request)
+                URLSession.shared.dataTask(with: urlRequest) { (data, urlResponse, error) in
+                    if let urlResponse = urlResponse, let httpURLResponseStatusCode = (urlResponse as? HTTPURLResponse)?.statusCode, httpURLResponseStatusCode == 200, let data = data, let image = UIImage(data: data) {
+                        let cachedURLResponse = CachedURLResponse(response: urlResponse, data: data)
+                        urlCacheShared.storeCachedResponse(cachedURLResponse, for: urlRequest)
                         DispatchQueue.main.async {
                             self.image = image
                         }
                     }
-                }).resume()
+                }.resume()
             }
         }
     }

@@ -15,6 +15,12 @@ enum API {
     #else
     static let baseURL = "https://www.filimo.com/_/api/fa/v1"
     #endif
+    
+    static let defaultHeaders = ["JsonType": "simple", "Content-Type": "application/json"]
+    
+    enum Endpoint {
+        static let vitrin = "/movie/movie/list/tagid/1"
+    }
 }
 
 
