@@ -17,7 +17,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="INk-0m-PLA">
-                        <rect key="frame" x="4" y="0.0" width="477" height="542"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="542"/>
+                        <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="8"/>
@@ -28,7 +29,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="INk-0m-PLA" secondAttribute="trailing" id="9DN-9m-Bvc"/>
                     <constraint firstItem="INk-0m-PLA" firstAttribute="top" secondItem="vM0-2Y-7JV" secondAttribute="top" id="Nib-ZB-ffS"/>
-                    <constraint firstItem="INk-0m-PLA" firstAttribute="leading" secondItem="vM0-2Y-7JV" secondAttribute="leading" constant="4" id="xiu-PS-Hvr"/>
+                    <constraint firstItem="INk-0m-PLA" firstAttribute="leading" secondItem="vM0-2Y-7JV" secondAttribute="leading" id="xiu-PS-Hvr"/>
                     <constraint firstAttribute="bottom" secondItem="INk-0m-PLA" secondAttribute="bottom" id="y2P-9e-xzB"/>
                 </constraints>
             </collectionViewCellContentView>

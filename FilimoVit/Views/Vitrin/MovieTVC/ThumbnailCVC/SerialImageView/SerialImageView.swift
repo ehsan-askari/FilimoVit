@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SerialImageView: UIView {
     
+    @IBOutlet var contentView: UIView!
+    
     @IBOutlet weak var firstImageView: UIImageView! {
         didSet {
-            self.firstImageView.addBlurEffect(alpha: 0.5)
+            self.firstImageView.addBlurEffect(alpha: 0.7)
         }
     }
     
     @IBOutlet weak var secondImageView: UIImageView! {
         didSet {
-            self.secondImageView.addBlurEffect(alpha: 0.8)
+            self.secondImageView.addBlurEffect(alpha: 0.3)
         }
     }
     
@@ -26,10 +29,34 @@ class SerialImageView: UIView {
     
     var imageURL: String! {
         didSet {
-            self.firstImageView.setImage(withURL: imageURL)
-            self.secondImageView.setImage(withURL: imageURL)
-            self.thirdImageView.setImage(withURL: imageURL)
+            self.firstImageView.kf.setImage(with: URL(string: imageURL))
+            self.secondImageView.kf.setImage(with: URL(string: imageURL))
+            self.thirdImageView.kf.setImage(with: URL(string: imageURL))
         }
+    }
+    
+    var isSerial: Bool! {
+        didSet {
+            self.firstImageView.isHidden = !isSerial
+            self.secondImageView.isHidden = !isSerial
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    private func commonInit(){
+        Bundle.main.loadNibNamed("SerialImageView", owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
     }
     
     func prepareForReuse() {

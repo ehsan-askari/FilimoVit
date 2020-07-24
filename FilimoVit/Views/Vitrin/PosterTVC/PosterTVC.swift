@@ -26,14 +26,14 @@ class PosterTVC: UITableViewCell {
     
     var poster: Poster? {
         didSet {
-            self.pagerView.automaticSlidingInterval = CGFloat(poster?.list.first?.autoPlayDuration ?? 0)
-            self.pageControl.numberOfPages = poster?.list.count ?? 0
+            self.pagerView.automaticSlidingInterval = CGFloat(self.poster?.list.first?.autoPlayDuration ?? 0)
+            self.pageControl.numberOfPages = self.poster?.list.count ?? 0
             self.pagerView.reloadData()
         }
     }
     
-   class func calculateHeight() -> CGFloat {
-        UIScreen.main.bounds.width * 0.35
+    class func calculateHeight(imageRatio: Float) -> CGFloat {
+        UIScreen.main.bounds.width * CGFloat(imageRatio)
     }
 }
 
@@ -44,9 +44,10 @@ extension PosterTVC: FSPagerViewDataSource {
 }
 
 extension PosterTVC: FSPagerViewDelegate {
+    
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
-        cell.forceRTL()
+        cell.contentView.forceRTL()
         cell.isUserInteractionEnabled = false
         cell.imageView?.contentMode = .scaleToFill
         if let imageURL = poster?.list[index].imageURL {

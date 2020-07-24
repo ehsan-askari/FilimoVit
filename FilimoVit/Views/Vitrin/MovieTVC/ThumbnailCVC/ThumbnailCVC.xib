@@ -25,20 +25,20 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Gjc-Sy-q6E">
-                        <rect key="frame" x="4" y="0.0" width="477" height="542"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="542"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laN-1Z-aLr">
-                                <rect key="frame" x="0.0" y="0.0" width="477" height="497.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="481" height="500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-Uc-Ewd" customClass="SerialImageView" customModule="FilimoVit" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="477" height="497.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="481" height="500"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hd" translatesAutoresizingMaskIntoConstraints="NO" id="mTz-SD-qAG">
-                                        <rect key="frame" x="6" y="471.5" width="20" height="20"/>
+                                        <rect key="frame" x="6" y="466" width="28" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="B0S-2i-CBT"/>
-                                            <constraint firstAttribute="height" constant="20" id="Owq-Kh-IJk"/>
+                                            <constraint firstAttribute="width" constant="28" id="B0S-2i-CBT"/>
+                                            <constraint firstAttribute="height" constant="28" id="Owq-Kh-IJk"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -53,14 +53,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان فارسی" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5N-5C-sVF">
-                                <rect key="frame" x="4" y="503.5" width="469" height="16.5"/>
-                                <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="13"/>
+                                <rect key="frame" x="4" y="506" width="473" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="P2I-XN-Sk3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="12"/>
                                 <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuP-lA-cD8">
-                                <rect key="frame" x="4" y="526" width="469" height="16"/>
-                                <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="13"/>
+                                <rect key="frame" x="4" y="527" width="473" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="hMR-Cp-7ZX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="12"/>
                                 <color key="textColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -79,14 +85,14 @@
                     <constraint firstAttribute="trailing" secondItem="Gjc-Sy-q6E" secondAttribute="trailing" id="AUz-3Z-uKd"/>
                     <constraint firstItem="Gjc-Sy-q6E" firstAttribute="top" secondItem="KzI-Jx-dnv" secondAttribute="top" id="GSp-4P-xcN"/>
                     <constraint firstAttribute="bottom" secondItem="Gjc-Sy-q6E" secondAttribute="bottom" id="I9v-MP-GxE"/>
-                    <constraint firstItem="Gjc-Sy-q6E" firstAttribute="leading" secondItem="KzI-Jx-dnv" secondAttribute="leading" constant="4" id="dC4-AV-dUe"/>
+                    <constraint firstItem="Gjc-Sy-q6E" firstAttribute="leading" secondItem="KzI-Jx-dnv" secondAttribute="leading" id="dC4-AV-dUe"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <size key="customSize" width="481" height="542"/>
             <connections>
                 <outlet property="hdImageView" destination="mTz-SD-qAG" id="TCz-Mk-4nR"/>
-                <outlet property="serialImageView" destination="cd6-Uc-Ewd" id="rKv-tf-8ay"/>
+                <outlet property="serialImageView" destination="cd6-Uc-Ewd" id="vmg-Xb-eqx"/>
                 <outlet property="titleEnLabel" destination="CuP-lA-cD8" id="Pbv-D6-FuZ"/>
                 <outlet property="titleLabel" destination="y5N-5C-sVF" id="6Si-ac-0vy"/>
             </connections>

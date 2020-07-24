@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ThumbplayCVC: UICollectionViewCell {
     
@@ -14,11 +15,15 @@ class ThumbplayCVC: UICollectionViewCell {
     
     var movieItem: Movie.MovieItem! {
         didSet {
-            self.imageView.setImage(withURL: movieItem.imageURL)
+            self.imageView.kf.setImage(with: URL(string: movieItem.imageURL))
         }
     }
     
     override func prepareForReuse() {
         self.imageView.image = UIImage()
+    }
+    
+    class func calculateSize() -> CGSize {
+        CGSize(width: 275, height: 150)
     }
 }

@@ -18,6 +18,7 @@ class ThumbnailCVC: UICollectionViewCell {
     var movieItem: Movie.MovieItem! {
         didSet {
             self.serialImageView.imageURL = movieItem.imageURL
+            self.serialImageView.isSerial = movieItem.isSerial
             self.hdImageView.isHidden = !movieItem.isHD
             self.titleLabel.text = movieItem.title
             self.titleEnLabel.text = movieItem.titleEn
@@ -26,6 +27,10 @@ class ThumbnailCVC: UICollectionViewCell {
     
     override func prepareForReuse() {
         self.serialImageView.prepareForReuse()
+    }
+    
+    class func calculateSize() -> CGSize {
+        CGSize(width: 150, height: 250)
     }
     
 }

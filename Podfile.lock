@@ -1,5 +1,8 @@
 PODS:
   - FSPagerView (0.8.3)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
   - RxBlocking (5.1.1):
     - RxSwift (~> 5)
   - RxCocoa (5.1.1):
@@ -13,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - FSPagerView
+  - Kingfisher (~> 5.0)
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -21,6 +25,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FSPagerView
+    - Kingfisher
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -29,12 +34,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
 
-PODFILE CHECKSUM: f2e580086ef0f63d2a911af3652fce0dd9713a22
+PODFILE CHECKSUM: ac56f3d13c64dcd6e2f57237cd9d90d2613d564c
 
 COCOAPODS: 1.9.1

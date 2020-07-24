@@ -134,8 +134,8 @@ extension VitrinVC: UITableViewDelegate {
         }
         
         switch vitrinVM.vitrinItems[indexPath.row] {
-        case .poster( _):
-            return PosterTVC.calculateHeight()
+        case .poster(let poster):
+            return PosterTVC.calculateHeight(imageRatio: poster.list.first?.imageRatio ?? 0.33)
         case .movie(let movie):
             return MovieTVC.calculateHeight(theme: movie.theme)
         default:

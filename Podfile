@@ -7,9 +7,10 @@ target 'FilimoVit' do
   
   # Pods for FilimoVit
   
-  pod 'FSPagerView'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'FSPagerView'
   
   target 'FilimoVitTests' do
     inherit! :search_paths

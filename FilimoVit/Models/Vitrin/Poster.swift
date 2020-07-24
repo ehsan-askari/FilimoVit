@@ -39,11 +39,13 @@ extension Poster {
         
         let id: Int
         let imageURL: String
+        let imageRatio: Float
         let autoPlayDuration: Float
         
         enum CodingKeys: String, CodingKey {
             case id
             case imageURL = "pic"
+            case imageRatio = "pic_ratio"
             case autoPlayDuration = "autoplay_duration"
         }
         
@@ -52,6 +54,8 @@ extension Poster {
             id = try container.decode(Int.self, forKey: .id)
             imageURL = try container.decode(String.self, forKey: .imageURL)
             autoPlayDuration = Float(try container.decode(String.self, forKey: .autoPlayDuration)) ?? 0
+            let temps = try container.decode(String.self, forKey: .imageRatio).split(separator: ":")
+            imageRatio = Float(temps[1])! / Float(temps[0])!
         }
         
         func encode(to encoder: Encoder) throws {}
