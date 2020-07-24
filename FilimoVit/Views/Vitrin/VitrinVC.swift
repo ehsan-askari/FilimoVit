@@ -82,20 +82,17 @@ class VitrinVC: UIViewController {
             .disposed(by: disposeBag)
         
         vitrinVM
-            .indexPathsToReload
+            .reload
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (indexPathsToReload) in
-                if let indexPathsToReload = indexPathsToReload {
-                    self.tableView.reloadRows(at: self.visibleIndexPathsToReload(indexPaths: indexPathsToReload), with: .none)
-                }else{
-                    self.tableView.reloadData()
-                }
+            .subscribe(onNext: { () in
+                self.tableView.reloadData()
             })
             .disposed(by: disposeBag)
         
     }
     
     @objc func handleRefreshControl() {
+        storedCVOffsets.removeAll()
         vitrinVM.refresh()
         vitrinVM.getVitrinItems()
     }
@@ -105,7 +102,7 @@ class VitrinVC: UIViewController {
 extension VitrinVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vitrinVM.totalVitrinItemsCount
+        return vitrinVM.vitrinItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -130,6 +127,12 @@ extension VitrinVC: UITableViewDataSource {
 }
 
 extension VitrinVC: UITableViewDelegate {
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if !vitrinVM.isFinished() && !activityIndicatorView.isAnimating && !refreshControl.isRefreshing{
+            vitrinVM.getVitrinItems()
+        }
+    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let cell = cell as? MovieTVC {
@@ -174,12 +177,6 @@ private extension VitrinVC {
     
     func isUnloadedCell(for indexPath: IndexPath) -> Bool {
         return indexPath.row >= vitrinVM.vitrinItems.count
-    }
-    
-    func visibleIndexPathsToReload(indexPaths: [IndexPath]) -> [IndexPath] {
-        let indexPathsForVisibleRows = tableView.indexPathsForVisibleRows ?? []
-        let indexPathsIntersection = Set(indexPathsForVisibleRows).intersection(indexPaths)
-        return Array(indexPathsIntersection)
     }
     
 }

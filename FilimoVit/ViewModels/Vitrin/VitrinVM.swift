@@ -11,7 +11,7 @@ import RxSwift
 
 class VitrinVM {
     
-    let indexPathsToReload: PublishSubject<[IndexPath]?> = PublishSubject()
+    let reload: PublishSubject<Void> = PublishSubject()
     let isLoading: PublishSubject<Bool> = PublishSubject()
     let error: PublishSubject<String> = PublishSubject()
     
@@ -35,14 +35,6 @@ class VitrinVM {
         vitrinItems.count == totalVitrinItemsCount
     }
     
-    private func calculateIndexPathsToReload(startIndex: Int, endIndex: Int) -> [IndexPath]? {
-        if startIndex == 0 {
-            return nil
-        }else {
-            return (startIndex..<endIndex).map { IndexPath(row: $0, section: 0) }
-        }
-    }
-    
     func getVitrinItems() {
         self.isLoading.onNext(true)
         APIManager.request(endpoint: nextEndpoint != nil ? nextEndpoint! : API.Endpoint.vitrin, httpMethod: .get) { (result) in
@@ -63,13 +55,8 @@ class VitrinVM {
                     if let jsonData = json["data"], let data = try? JSONSerialization.data(withJSONObject: jsonData, options: .prettyPrinted){
                         
                         if let vitrinItems = try? JSONDecoder().decode([VitrinItem].self, from: data){
-                            
-                            let oldVitrinItemsCount = self.vitrinItems.count
                             self.vitrinItems.append(contentsOf: vitrinItems)
-                            let newVitrinItemsCount = self.vitrinItems.count
-                            
-                            self.indexPathsToReload.onNext(self.calculateIndexPathsToReload(startIndex: oldVitrinItemsCount, endIndex: newVitrinItemsCount))
-                            
+                            self.reload.onNext(())
                         }
                     }
                 }
