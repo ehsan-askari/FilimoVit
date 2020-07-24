@@ -83,7 +83,7 @@ class VitrinVC: UIViewController {
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (indexPathsToReload) in
                 if let indexPathsToReload = indexPathsToReload {
-                    self.tableView.reloadRows(at: self.visibleIndexPathsToReload(indexPaths: indexPathsToReload), with: .automatic)
+                    self.tableView.reloadRows(at: self.visibleIndexPathsToReload(indexPaths: indexPathsToReload), with: .none)
                 }else{
                     self.tableView.reloadData()
                 }

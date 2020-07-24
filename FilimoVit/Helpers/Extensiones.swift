@@ -37,7 +37,7 @@ extension UIViewController {
     func showAlertView(message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         self.present(alertController, animated: true)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             alertController.dismiss(animated: true)
         }
     }
