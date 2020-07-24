@@ -30,6 +30,10 @@ enum Color {
     static let gray = #colorLiteral(red: 0.8505141139, green: 0.8506365418, blue: 0.853792727, alpha: 1)
 }
 
+enum Message {
+    static let noConnection = "عدم اتصال به شبکه!"
+    static let unknown = "خطای نامشخص!"
+}
 
 enum VitrinItemType: String, Codable {
     case HeaderSlider = "headerslider"

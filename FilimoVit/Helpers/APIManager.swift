@@ -42,7 +42,7 @@ class APIManager {
         case failure(RequestError)
     }
     
-    class func request(endpoint: String, httpMethod: HTTPMethod, headers: Headers?, params: Params?, completion: @escaping (RequestResult) -> Void) {
+    class func request(endpoint: String, httpMethod: HTTPMethod, headers: Headers? = nil, params: Params? = nil, completion: @escaping (RequestResult) -> Void) {
         
         guard let url = URL(string: API.baseURL + endpoint) else {
             completion(RequestResult.failure(.badURL))
@@ -54,7 +54,7 @@ class APIManager {
         urlRequest.allHTTPHeaderFields = API.defaultHeaders.merging(headers ?? [String: String]()) { (_, new) in new }
         if let params = params {
             do {
-                let paramsData = try JSONSerialization.data(withJSONObject: params, options: [.prettyPrinted])
+                let paramsData = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
                 urlRequest.httpBody = paramsData
             } catch {
                 completion(RequestResult.failure(.serialization(error)))

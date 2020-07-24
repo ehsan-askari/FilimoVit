@@ -4,20 +4,24 @@
 target 'FilimoVit' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for FilimoVit
-	pod 'FSPagerView'
-
-
-
-
+  
+  pod 'FSPagerView'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  
   target 'FilimoVitTests' do
     inherit! :search_paths
     # Pods for testing
-  end
 
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
+
+  end
+  
   target 'FilimoVitUITests' do
     # Pods for testing
   end
-
+  
 end

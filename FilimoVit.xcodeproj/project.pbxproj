@@ -29,7 +29,7 @@
 		AA1A49DA24C3653600CA821C /* PosterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49D924C3653600CA821C /* PosterTVC.swift */; };
 		AA1A49DC24C3654900CA821C /* PosterTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49DB24C3654900CA821C /* PosterTVC.xib */; };
 		AA1A49DE24C36C1900CA821C /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49DD24C36C1900CA821C /* Extensiones.swift */; };
-		AA1A49E124C49D1500CA821C /* MoiveTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49E024C49D1500CA821C /* MoiveTVC.swift */; };
+		AA1A49E124C49D1500CA821C /* MovieTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49E024C49D1500CA821C /* MovieTVC.swift */; };
 		AA1A49E324C49D2800CA821C /* MovieTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E224C49D2800CA821C /* MovieTVC.xib */; };
 		AA1A49EA24C49F8700CA821C /* IRANSansMobile(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E524C49F8700CA821C /* IRANSansMobile(FaNum).ttf */; };
 		AA1A49EB24C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */; };
@@ -99,7 +99,7 @@
 		AA1A49D924C3653600CA821C /* PosterTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterTVC.swift; sourceTree = "<group>"; };
 		AA1A49DB24C3654900CA821C /* PosterTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterTVC.xib; sourceTree = "<group>"; };
 		AA1A49DD24C36C1900CA821C /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
-		AA1A49E024C49D1500CA821C /* MoiveTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiveTVC.swift; sourceTree = "<group>"; };
+		AA1A49E024C49D1500CA821C /* MovieTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTVC.swift; sourceTree = "<group>"; };
 		AA1A49E224C49D2800CA821C /* MovieTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTVC.xib; sourceTree = "<group>"; };
 		AA1A49E524C49F8700CA821C /* IRANSansMobile(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum).ttf"; sourceTree = "<group>"; };
 		AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 				AA1A49F424C4C3A800CA821C /* ThumbnailCVC */,
 				AA1A49F924C4C46300CA821C /* TheaterCVC */,
 				AA1A49E224C49D2800CA821C /* MovieTVC.xib */,
-				AA1A49E024C49D1500CA821C /* MoiveTVC.swift */,
+				AA1A49E024C49D1500CA821C /* MovieTVC.swift */,
 			);
 			path = MovieTVC;
 			sourceTree = "<group>";
@@ -394,6 +394,7 @@
 				AA1A499524C065F000CA821C /* Sources */,
 				AA1A499624C065F000CA821C /* Frameworks */,
 				AA1A499724C065F000CA821C /* Resources */,
+				3DF88924E01E857A17D71CE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,6 +509,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3DF88924E01E857A17D71CE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilimoVitTests/Pods-FilimoVitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilimoVitTests/Pods-FilimoVitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FilimoVitTests/Pods-FilimoVitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7D8E420DCD3562BD45AA6B12 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,7 +645,7 @@
 				AA1A4A0224C58BEB00CA821C /* SerialImageView.swift in Sources */,
 				AA1A49BE24C1C48B00CA821C /* VitrinItem.swift in Sources */,
 				AA1A49C424C2148E00CA821C /* Poster.swift in Sources */,
-				AA1A49E124C49D1500CA821C /* MoiveTVC.swift in Sources */,
+				AA1A49E124C49D1500CA821C /* MovieTVC.swift in Sources */,
 				AA1A498924C065EE00CA821C /* SceneDelegate.swift in Sources */,
 				AA1A49F824C4C44500CA821C /* ThumbnailCVC.swift in Sources */,
 				AA1A49C824C21DAB00CA821C /* Tag.swift in Sources */,

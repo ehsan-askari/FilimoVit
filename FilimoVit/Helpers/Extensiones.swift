@@ -33,6 +33,16 @@ extension UIView {
     
 }
 
+extension UIViewController {
+    func showAlertView(message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        self.present(alertController, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            alertController.dismiss(animated: true)
+        }
+    }
+}
+
 extension UIImageView {
     
     func setImage(withURL url: String) {
