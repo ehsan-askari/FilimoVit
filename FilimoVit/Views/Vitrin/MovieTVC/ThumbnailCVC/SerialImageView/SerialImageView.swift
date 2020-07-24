@@ -60,9 +60,9 @@ class SerialImageView: UIView {
     }
     
     func prepareForReuse() {
-        self.firstImageView.image = UIImage()
-        self.secondImageView.image = UIImage()
-        self.thirdImageView.image = UIImage()
+        self.firstImageView.image = nil
+        self.secondImageView.image = nil
+        self.thirdImageView.image = nil
     }
     
 }

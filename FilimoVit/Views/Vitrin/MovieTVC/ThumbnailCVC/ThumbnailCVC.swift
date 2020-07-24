@@ -26,6 +26,7 @@ class ThumbnailCVC: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         self.serialImageView.prepareForReuse()
     }
     

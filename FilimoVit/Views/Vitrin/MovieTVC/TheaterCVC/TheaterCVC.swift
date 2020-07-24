@@ -40,8 +40,9 @@ class TheaterCVC: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-        self.coverImageView.image = UIImage()
-        self.imageView.image = UIImage()
+        super.prepareForReuse()
+        self.coverImageView.image = nil
+        self.imageView.image = nil
         self.imdbRateSV.isHidden = true
     }
     

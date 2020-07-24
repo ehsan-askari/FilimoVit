@@ -20,7 +20,8 @@ class ThumbplayCVC: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-        self.imageView.image = UIImage()
+        super.prepareForReuse()
+        self.imageView.image = nil
     }
     
     class func calculateSize() -> CGSize {
