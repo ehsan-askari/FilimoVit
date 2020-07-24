@@ -22,7 +22,8 @@ class VitrinVC: UIViewController {
     }()
     
     lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let activityIndicatorView = UIActivityIndicatorView(style: .medium)
+        let activityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        activityIndicatorView.style = .medium
         activityIndicatorView.color = Color.gray
         activityIndicatorView.hidesWhenStopped = true
         return activityIndicatorView
@@ -162,7 +163,7 @@ extension VitrinVC: UITableViewDelegate {
 extension VitrinVC: UITableViewDataSourcePrefetching {
     
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        if !vitrinVM.isFinished() && !activityIndicatorView.isAnimating && indexPaths.contains(where: isUnloadedCell) {
+        if !vitrinVM.isFinished() && !activityIndicatorView.isAnimating && !refreshControl.isRefreshing && indexPaths.contains(where: isUnloadedCell) {
             vitrinVM.getVitrinItems()
         }
     }
