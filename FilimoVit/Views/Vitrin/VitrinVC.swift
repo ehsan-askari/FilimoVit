@@ -7,86 +7,165 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class VitrinVC: UIViewController {
     
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:
+            #selector(handleRefreshControl),
+                                 for: .valueChanged)
+        refreshControl.tintColor = Color.gray
+        return refreshControl
+    }()
+    
+    lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let activityIndicatorView = UIActivityIndicatorView(style: .medium)
+        activityIndicatorView.color = Color.gray
+        activityIndicatorView.hidesWhenStopped = true
+        return activityIndicatorView
+    }()
+    
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            self.tableView.register(UINib(nibName: String(describing: PosterTVC.self), bundle: nil), forCellReuseIdentifier: String(describing: PosterTVC.self))
+            self.tableView.register(UINib(nibName: String(describing: MovieTVC.self), bundle: nil), forCellReuseIdentifier: String(describing: MovieTVC.self))
+            if #available(iOS 10.0, *) {
+                self.tableView.refreshControl = self.refreshControl
+            } else {
+                self.tableView.addSubview(self.refreshControl)
+            }
+            self.tableView.contentOffset = CGPoint(x: 0, y: -self.refreshControl.frame.size.height)
+            self.tableView.tableFooterView = self.activityIndicatorView
+        }
+    }
+    
+    private var vitrinVM = VitrinVM()
+    
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        requestData()
-        
+        setupBindings()
+        vitrinVM.getVitrinItems()
     }
     
-    
-    public func requestData(){
+    private func setupBindings() {
         
-        //        self.loading.onNext(true)
-        APIManager.requestData(url: "/movie/movie/list/tagid/1", method: .get, parameters: nil, completion: { (result) in
-            //            self.loading.onNext(false)
-            
-            switch result {
-            case .success(let data) :
-                
-                                var json = try? JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                               let x = json?["data"] as! [Any]
-                ////                x[0].rawData
-                ////                print(x[0].raw ?? "asd")
-                //
-                                if let xxx = try? JSONSerialization.data(withJSONObject: x.first, options: .prettyPrinted){
-                                    do {
-                                                     let decodedResponse = try? JSONDecoder().decode(VitrinItem.self, from: xxx)
-                                                     print(decodedResponse)
-                                                 }
-                                                 catch {
-                                                     print(error)
-                                                     
-                                                 }
-                                }
-                
-                
-                
-                
-             
-                
-                //                let decoder = JSONDecoder()
-                //                let message = try decoder.decode(Message.self, from: json)
-                //
-                //                let xt = try? VitrinItem(from: data as! Decoder) as? VitrinItem
-                
-                
-                //                    print(xt?.list.first.self)
-                
-                //                    let o = xt?.list.first
-                //
-                //                    switch o {
-                //                    case .poster(let q ):
-                //                        print(q)
-                //                    case .movie(let w):
-                //                        print(w)
-                //                    }
-                
-                //                    print(GenericItem.Type)
-                
-                
-                
-                
-                //                self.albums.onNext(albums)
-            //                self.tracks.onNext(tracks)
-            case .failure(let failure) :
-                switch failure {
-                case .connectionError: break
-                    //                    self.error.onNext(.internetError("Check your Internet connection."))
-                    
-                //                    self.error.onNext(.serverMessage(errorJson["message"].stringValue))
-                default: break
-                    //                    self.error.onNext(.serverMessage("Unknown Error"))
+        vitrinVM
+            .isLoading
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (isLoading) in
+                if self.vitrinVM.isFresh() {
+                    if isLoading && !self.refreshControl.isRefreshing {
+                        self.refreshControl.beginRefreshing()
+                    }else{
+                        self.refreshControl.endRefreshing()
+                    }
+                } else {
+                    isLoading ? self.activityIndicatorView.startAnimating() : self.activityIndicatorView.stopAnimating()
                 }
-            }
-        })
+            })
+            .disposed(by: disposeBag)
+        
+        vitrinVM
+            .error
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (message) in
+                self.showAlertView(message: message)
+            })
+            .disposed(by: disposeBag)
+        
+        vitrinVM
+            .indexPathsToReload
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (indexPathsToReload) in
+                if let indexPathsToReload = indexPathsToReload {
+                    self.tableView.reloadRows(at: self.visibleIndexPathsToReload(indexPaths: indexPathsToReload), with: .automatic)
+                }else{
+                    self.tableView.reloadData()
+                }
+            })
+            .disposed(by: disposeBag)
         
     }
     
+    @objc func handleRefreshControl() {
+        vitrinVM.refresh()
+        vitrinVM.getVitrinItems()
+    }
+    
+}
+
+extension VitrinVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return vitrinVM.totalVitrinItemsCount
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard !isUnloadedCell(for: indexPath) else {
+            return UITableViewCell()
+        }
+        
+        switch vitrinVM.vitrinItems[indexPath.row] {
+        case .poster(let poster):
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PosterTVC.self), for: indexPath) as! PosterTVC
+            cell.poster = poster
+            return cell
+        case .movie(let movie):
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MovieTVC.self), for: indexPath) as! MovieTVC
+            cell.movie = movie
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+}
+
+extension VitrinVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard !isUnloadedCell(for: indexPath) else {
+            return 0
+        }
+        
+        switch vitrinVM.vitrinItems[indexPath.row] {
+        case .poster( _):
+            return PosterTVC.calculateHeight()
+        case .movie(let movie):
+            return MovieTVC.calculateHeight(theme: movie.theme)
+        default:
+            return 0
+        }
+    }
+    
+}
+
+extension VitrinVC: UITableViewDataSourcePrefetching {
+    
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        if !vitrinVM.isFinished() && !activityIndicatorView.isAnimating && indexPaths.contains(where: isUnloadedCell) {
+            vitrinVM.getVitrinItems()
+        }
+    }
+    
+}
+
+private extension VitrinVC {
+    
+    func isUnloadedCell(for indexPath: IndexPath) -> Bool {
+        return indexPath.row >= vitrinVM.vitrinItems.count
+    }
+    
+    func visibleIndexPathsToReload(indexPaths: [IndexPath]) -> [IndexPath] {
+        let indexPathsForVisibleRows = tableView.indexPathsForVisibleRows ?? []
+        let indexPathsIntersection = Set(indexPathsForVisibleRows).intersection(indexPaths)
+        return Array(indexPathsIntersection)
+    }
     
 }
 
