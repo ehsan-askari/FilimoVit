@@ -26,7 +26,7 @@ class PosterTVC: UITableViewCell {
     
     var poster: Poster? {
         didSet {
-            self.pagerView.automaticSlidingInterval = CGFloat(self.poster?.list.first?.autoPlayDuration ?? 0)
+//            self.pagerView.automaticSlidingInterval = CGFloat(self.poster?.list.first?.autoPlayDuration ?? 0)
             self.pageControl.numberOfPages = self.poster?.list.count ?? 0
             self.pagerView.reloadData()
         }
