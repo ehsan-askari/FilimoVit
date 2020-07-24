@@ -24,7 +24,7 @@ extension UIView {
     }
     
     func addBlurEffect(alpha: CGFloat) {
-        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
         visualEffectView.frame = self.bounds
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.alpha = alpha

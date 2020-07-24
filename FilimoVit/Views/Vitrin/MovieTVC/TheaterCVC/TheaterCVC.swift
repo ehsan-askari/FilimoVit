@@ -7,14 +7,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TheaterCVC: UICollectionViewCell {
     
-    @IBOutlet weak var coverImageView: UIImageView! {
-        didSet {
-            self.coverImageView.addBlurEffect(alpha: 0.5)
-        }
-    }
+    @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var hdImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -26,8 +23,8 @@ class TheaterCVC: UICollectionViewCell {
     
     var movieItem: Movie.MovieItem! {
         didSet {
-            self.coverImageView.setImage(withURL: movieItem.coverImageURL ?? "")
-            self.imageView.setImage(withURL: movieItem.imageURL)
+            self.coverImageView.kf.setImage(with: URL(string: movieItem.coverImageURL ?? ""))
+            self.imageView.kf.setImage(with: URL(string: movieItem.imageURL))
             self.hdImageView.isHidden = !movieItem.isHD
             self.titleLabel.text = movieItem.title
             self.avgRatePercentageLabel.text = movieItem.avgRatePercentage
@@ -36,6 +33,8 @@ class TheaterCVC: UICollectionViewCell {
             if let iR = movieItem.imdbRate {
                 self.imdbRateSV.isHidden = false
                 imdbRateLabel.text = String(iR)
+            }else {
+                self.imdbRateSV.isHidden = true
             }
         }
     }
@@ -45,4 +44,9 @@ class TheaterCVC: UICollectionViewCell {
         self.imageView.image = UIImage()
         self.imdbRateSV.isHidden = true
     }
+    
+    class func calculateSize() -> CGSize {
+        CGSize(width: 300, height: 165)
+    }
+    
 }

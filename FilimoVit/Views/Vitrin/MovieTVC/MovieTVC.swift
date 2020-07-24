@@ -29,6 +29,7 @@ class MovieTVC: UITableViewCell {
             if self.movie.title.isEmpty {
                 self.titleView.isHidden = true
             } else {
+                self.titleView.isHidden = false
                 self.titleLabel.text = self.movie.title
             }
             self.collectionView.reloadData()
