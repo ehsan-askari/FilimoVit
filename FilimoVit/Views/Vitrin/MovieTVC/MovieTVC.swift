@@ -36,6 +36,15 @@ class MovieTVC: UITableViewCell {
         }
     }
     
+    var cvOffset: CGFloat {
+        set {
+            self.collectionView.contentOffset.x = newValue
+        }
+        get {
+            return self.collectionView.contentOffset.x
+        }
+    }
+    
     class func calculateHeight(theme: VitrinItemTheme) -> CGFloat {
         var height: CGFloat = 0
         switch theme {

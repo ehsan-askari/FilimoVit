@@ -46,6 +46,8 @@ class VitrinVC: UIViewController {
     
     private let disposeBag = DisposeBag()
     
+    var storedCVOffsets = [IndexPath: CGFloat]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBindings()
@@ -127,6 +129,18 @@ extension VitrinVC: UITableViewDataSource {
 }
 
 extension VitrinVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let cell = cell as? MovieTVC {
+            cell.cvOffset = storedCVOffsets[indexPath] ?? 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let cell = cell as? MovieTVC {
+            storedCVOffsets[indexPath] = cell.cvOffset
+        }
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         guard !isUnloadedCell(for: indexPath) else {
