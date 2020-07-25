@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRm-t2-261" customClass="FSPagerView" customModule="FSPagerView">
-                        <rect key="frame" x="0.0" y="0.0" width="581" height="370"/>
+                        <rect key="frame" x="0.0" y="0.0" width="581" height="346"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
                             <outlet property="dataSource" destination="W4J-uY-Xx7" id="Sro-Bq-wy7"/>
@@ -24,7 +24,7 @@
                         </connections>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkc-AA-r9G" customClass="FSPageControl" customModule="FSPagerView">
-                        <rect key="frame" x="0.0" y="340" width="581" height="30"/>
+                        <rect key="frame" x="0.0" y="316" width="581" height="30"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="cbc-27-0IF"/>
@@ -37,7 +37,7 @@
                     <constraint firstAttribute="trailing" secondItem="Bkc-AA-r9G" secondAttribute="trailing" id="9d5-5Y-zQ4"/>
                     <constraint firstAttribute="trailing" secondItem="dRm-t2-261" secondAttribute="trailing" id="Yhv-27-zTi"/>
                     <constraint firstItem="dRm-t2-261" firstAttribute="leading" secondItem="fRn-qd-ozg" secondAttribute="leading" id="loz-VT-ltt"/>
-                    <constraint firstAttribute="bottom" secondItem="dRm-t2-261" secondAttribute="bottom" id="qXa-uc-4s9"/>
+                    <constraint firstAttribute="bottom" secondItem="dRm-t2-261" secondAttribute="bottom" constant="24" id="qXa-uc-4s9"/>
                     <constraint firstItem="Bkc-AA-r9G" firstAttribute="leading" secondItem="fRn-qd-ozg" secondAttribute="leading" id="xWi-eu-pXL"/>
                 </constraints>
             </tableViewCellContentView>

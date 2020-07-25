@@ -24,7 +24,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SzE-Vk-mDd">
-                        <rect key="frame" x="0.0" y="24" width="823" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="823" height="416"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szG-PN-IrW">
                                 <rect key="frame" x="4" y="0.0" width="811" height="35"/>
@@ -89,8 +89,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="SzE-Vk-mDd" secondAttribute="trailing" id="4jF-h6-pjJ"/>
-                    <constraint firstItem="SzE-Vk-mDd" firstAttribute="top" secondItem="Q7h-pp-9kp" secondAttribute="top" constant="24" id="ESA-nS-1o4"/>
-                    <constraint firstAttribute="bottom" secondItem="SzE-Vk-mDd" secondAttribute="bottom" id="bJh-ho-3pn"/>
+                    <constraint firstItem="SzE-Vk-mDd" firstAttribute="top" secondItem="Q7h-pp-9kp" secondAttribute="top" id="ESA-nS-1o4"/>
+                    <constraint firstAttribute="bottom" secondItem="SzE-Vk-mDd" secondAttribute="bottom" constant="24" id="bJh-ho-3pn"/>
                     <constraint firstItem="SzE-Vk-mDd" firstAttribute="leading" secondItem="Q7h-pp-9kp" secondAttribute="leading" id="yzY-xb-0Qn"/>
                 </constraints>
             </tableViewCellContentView>

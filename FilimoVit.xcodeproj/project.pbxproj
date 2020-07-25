@@ -31,21 +31,21 @@
 		AA1A49DE24C36C1900CA821C /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49DD24C36C1900CA821C /* Extensiones.swift */; };
 		AA1A49E124C49D1500CA821C /* MovieTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49E024C49D1500CA821C /* MovieTVC.swift */; };
 		AA1A49E324C49D2800CA821C /* MovieTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E224C49D2800CA821C /* MovieTVC.xib */; };
-		AA1A49EA24C49F8700CA821C /* IRANSansMobile(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E524C49F8700CA821C /* IRANSansMobile(FaNum).ttf */; };
-		AA1A49EB24C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */; };
-		AA1A49EC24C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E724C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf */; };
-		AA1A49ED24C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E824C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf */; };
-		AA1A49EE24C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49E924C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf */; };
 		AA1A49F124C4C37500CA821C /* ThumbplayCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49F024C4C37500CA821C /* ThumbplayCVC.xib */; };
 		AA1A49F324C4C38A00CA821C /* ThumbplayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49F224C4C38A00CA821C /* ThumbplayCVC.swift */; };
 		AA1A49F624C4C3D700CA821C /* ThumbnailCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49F524C4C3D700CA821C /* ThumbnailCVC.xib */; };
 		AA1A49F824C4C44500CA821C /* ThumbnailCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49F724C4C44500CA821C /* ThumbnailCVC.swift */; };
 		AA1A49FB24C4C49600CA821C /* TheaterCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */; };
 		AA1A49FD24C4C4A000CA821C /* TheaterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */; };
-		AA1A49FF24C4CBD500CA821C /* Product_Sans_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */; };
 		AA1A4A0224C58BEB00CA821C /* SerialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1A4A0124C58BEB00CA821C /* SerialImageView.swift */; };
 		AA1A4A0424C58BFA00CA821C /* SerialImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1A4A0324C58BFA00CA821C /* SerialImageView.xib */; };
 		AAA4985424C8C21B00591E73 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA4985324C8C21B00591E73 /* APIManager.swift */; };
+		AAD8EAB624CC391000F0A8B8 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB024CC391000F0A8B8 /* IRANSansMobile(FaNum)_Medium.ttf */; };
+		AAD8EAB724CC391000F0A8B8 /* IRANSansMobile(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB124CC391000F0A8B8 /* IRANSansMobile(FaNum)_Light.ttf */; };
+		AAD8EAB824CC391000F0A8B8 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB224CC391000F0A8B8 /* IRANSansMobile(FaNum)_UltraLight.ttf */; };
+		AAD8EAB924CC391000F0A8B8 /* IRANSansMobile(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB324CC391000F0A8B8 /* IRANSansMobile(FaNum).ttf */; };
+		AAD8EABA24CC391000F0A8B8 /* Product_Sans_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB424CC391000F0A8B8 /* Product_Sans_Regular.ttf */; };
+		AAD8EABB24CC391000F0A8B8 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD8EAB524CC391000F0A8B8 /* IRANSansMobile(FaNum)_Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,21 +101,21 @@
 		AA1A49DD24C36C1900CA821C /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
 		AA1A49E024C49D1500CA821C /* MovieTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTVC.swift; sourceTree = "<group>"; };
 		AA1A49E224C49D2800CA821C /* MovieTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTVC.xib; sourceTree = "<group>"; };
-		AA1A49E524C49F8700CA821C /* IRANSansMobile(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum).ttf"; sourceTree = "<group>"; };
-		AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
-		AA1A49E724C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Light.ttf"; sourceTree = "<group>"; };
-		AA1A49E824C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_UltraLight.ttf"; sourceTree = "<group>"; };
-		AA1A49E924C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Medium.ttf"; sourceTree = "<group>"; };
 		AA1A49F024C4C37500CA821C /* ThumbplayCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbplayCVC.xib; sourceTree = "<group>"; };
 		AA1A49F224C4C38A00CA821C /* ThumbplayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbplayCVC.swift; sourceTree = "<group>"; };
 		AA1A49F524C4C3D700CA821C /* ThumbnailCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCVC.xib; sourceTree = "<group>"; };
 		AA1A49F724C4C44500CA821C /* ThumbnailCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCVC.swift; sourceTree = "<group>"; };
 		AA1A49FA24C4C49600CA821C /* TheaterCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TheaterCVC.xib; sourceTree = "<group>"; };
 		AA1A49FC24C4C4A000CA821C /* TheaterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCVC.swift; sourceTree = "<group>"; };
-		AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Product_Sans_Regular.ttf; sourceTree = "<group>"; };
 		AA1A4A0124C58BEB00CA821C /* SerialImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialImageView.swift; sourceTree = "<group>"; };
 		AA1A4A0324C58BFA00CA821C /* SerialImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerialImageView.xib; sourceTree = "<group>"; };
 		AAA4985324C8C21B00591E73 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AAD8EAB024CC391000F0A8B8 /* IRANSansMobile(FaNum)_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IRANSansMobile(FaNum)_Medium.ttf"; path = "FilimoVit/Fonts/IRANSansMobile(FaNum)_Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		AAD8EAB124CC391000F0A8B8 /* IRANSansMobile(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IRANSansMobile(FaNum)_Light.ttf"; path = "FilimoVit/Fonts/IRANSansMobile(FaNum)_Light.ttf"; sourceTree = SOURCE_ROOT; };
+		AAD8EAB224CC391000F0A8B8 /* IRANSansMobile(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IRANSansMobile(FaNum)_UltraLight.ttf"; path = "FilimoVit/Fonts/IRANSansMobile(FaNum)_UltraLight.ttf"; sourceTree = SOURCE_ROOT; };
+		AAD8EAB324CC391000F0A8B8 /* IRANSansMobile(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IRANSansMobile(FaNum).ttf"; path = "FilimoVit/Fonts/IRANSansMobile(FaNum).ttf"; sourceTree = SOURCE_ROOT; };
+		AAD8EAB424CC391000F0A8B8 /* Product_Sans_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Product_Sans_Regular.ttf; path = FilimoVit/Fonts/Product_Sans_Regular.ttf; sourceTree = SOURCE_ROOT; };
+		AAD8EAB524CC391000F0A8B8 /* IRANSansMobile(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IRANSansMobile(FaNum)_Bold.ttf"; path = "FilimoVit/Fonts/IRANSansMobile(FaNum)_Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		EF6DCC97617DC49DCFE6DD52 /* Pods_FilimoVit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilimoVit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				AA1A498524C065EE00CA821C /* FilimoVit */,
-				AA1A49E424C49F2300CA821C /* Fonts */,
 				AA1A499C24C065F000CA821C /* FilimoVitTests */,
 				AA1A49A724C065F000CA821C /* FilimoVitUITests */,
 				AA1A498424C065EE00CA821C /* Products */,
@@ -193,6 +192,7 @@
 				AA1A499124C065F000CA821C /* LaunchScreen.storyboard */,
 				AA1A498F24C065F000CA821C /* Assets.xcassets */,
 				AA1A499424C065F000CA821C /* Info.plist */,
+				AA1A49E424C49F2300CA821C /* Fonts */,
 			);
 			path = FilimoVit;
 			sourceTree = "<group>";
@@ -304,14 +304,15 @@
 		AA1A49E424C49F2300CA821C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AA1A49FE24C4CBD500CA821C /* Product_Sans_Regular.ttf */,
-				AA1A49E624C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf */,
-				AA1A49E724C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf */,
-				AA1A49E924C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf */,
-				AA1A49E824C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf */,
-				AA1A49E524C49F8700CA821C /* IRANSansMobile(FaNum).ttf */,
+				AAD8EAB524CC391000F0A8B8 /* IRANSansMobile(FaNum)_Bold.ttf */,
+				AAD8EAB124CC391000F0A8B8 /* IRANSansMobile(FaNum)_Light.ttf */,
+				AAD8EAB024CC391000F0A8B8 /* IRANSansMobile(FaNum)_Medium.ttf */,
+				AAD8EAB224CC391000F0A8B8 /* IRANSansMobile(FaNum)_UltraLight.ttf */,
+				AAD8EAB324CC391000F0A8B8 /* IRANSansMobile(FaNum).ttf */,
+				AAD8EAB424CC391000F0A8B8 /* Product_Sans_Regular.ttf */,
 			);
-			path = Fonts;
+			name = Fonts;
+			path = ../Fonts;
 			sourceTree = "<group>";
 		};
 		AA1A49EF24C4C34200CA821C /* ThumbplayCVC */ = {
@@ -475,20 +476,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1A499324C065F000CA821C /* LaunchScreen.storyboard in Resources */,
-				AA1A49EC24C49F8700CA821C /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
 				AA1A499024C065F000CA821C /* Assets.xcassets in Resources */,
+				AAD8EAB824CC391000F0A8B8 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
+				AAD8EAB724CC391000F0A8B8 /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
 				AA1A49DC24C3654900CA821C /* PosterTVC.xib in Resources */,
 				AA1A4A0424C58BFA00CA821C /* SerialImageView.xib in Resources */,
 				AA1A49E324C49D2800CA821C /* MovieTVC.xib in Resources */,
 				AA1A49F624C4C3D700CA821C /* ThumbnailCVC.xib in Resources */,
-				AA1A49ED24C49F8700CA821C /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
+				AAD8EABA24CC391000F0A8B8 /* Product_Sans_Regular.ttf in Resources */,
+				AAD8EAB924CC391000F0A8B8 /* IRANSansMobile(FaNum).ttf in Resources */,
+				AAD8EAB624CC391000F0A8B8 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
 				AA1A49F124C4C37500CA821C /* ThumbplayCVC.xib in Resources */,
-				AA1A49FF24C4CBD500CA821C /* Product_Sans_Regular.ttf in Resources */,
-				AA1A49EE24C49F8700CA821C /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
-				AA1A49EA24C49F8700CA821C /* IRANSansMobile(FaNum).ttf in Resources */,
 				AA1A49FB24C4C49600CA821C /* TheaterCVC.xib in Resources */,
+				AAD8EABB24CC391000F0A8B8 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
 				AA1A498E24C065EE00CA821C /* Main.storyboard in Resources */,
-				AA1A49EB24C49F8700CA821C /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

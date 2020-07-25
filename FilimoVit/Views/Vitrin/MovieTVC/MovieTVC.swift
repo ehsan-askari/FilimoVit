@@ -53,11 +53,11 @@ class MovieTVC: UITableViewCell {
         case .Thumbnail:
             height = ThumbnailCVC.calculateSize().height
         case .Theater:
-            height = TheaterCVC.calculateSize().height
+            height = TheaterCVC.calculateSize().height - 43
         default:
             return 0
         }
-        return height + 75
+        return height + 67
     }
 }
 

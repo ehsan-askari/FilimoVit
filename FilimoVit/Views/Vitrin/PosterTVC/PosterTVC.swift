@@ -33,7 +33,7 @@ class PosterTVC: UITableViewCell {
     }
     
     class func calculateHeight(imageRatio: Float) -> CGFloat {
-        UIScreen.main.bounds.width * CGFloat(imageRatio)
+        (UIScreen.main.bounds.width * CGFloat(imageRatio)) + 24
     }
 }
 
